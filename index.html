@@ -16,7 +16,7 @@
 
     <nav>
         <ul>
-            <li><a class="page" href="">Consigli</a></li>
+            <li><a class="page" href="#" id="consigliButton">Consigli</a></li>
             <li><a class="page" href="https://discord.com/invite/qaprqV6cHE">Discord</a></li>
             <li><a class="page Minecraft" id="copyButton">Minecraft</a></li>
             <div id="notification" class="notification">IP copiato correttamente!</div>
@@ -26,6 +26,17 @@
     </nav>
 
     <div style="padding: 10px;"></div>
+    
+    <div id="consigliSection" class="hidden">
+        <h2>Consigli</h2>
+        <form id="consigliForm">
+            <label for="title">Titolo:</label>
+            <input type="text" id="title" name="title" required>
+            <label for="description">Descrizione:</label>
+            <textarea id="description" name="description" required></textarea>
+            <button type="submit">Invia</button>
+        </form>
+    </div>
 
     <div class="container">
         <img src="img/logo.png" alt="tutorial">
