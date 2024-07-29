@@ -1,3 +1,4 @@
+// copy ip
 document.getElementById('copyButton').addEventListener('click', function() {
     const textToCopy = 'play.starmc.net';
 
@@ -19,4 +20,63 @@ document.getElementById('copyButton').addEventListener('click', function() {
     setTimeout(function() {
         notification.classList.remove('show');
     }, 3000);
+});
+
+
+// consigli
+document.getElementById('consigliButton').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('consigliSection').classList.toggle('hidden');
+});
+
+
+
+document.getElementById('consigliForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const title = document.getElementById('title').value;
+    const description = document.getElementById('description').value;
+
+    const webhookURL = 'https://discord.com/api/webhooks/1267498868229144730/vLMxzUBkw_fWWVlVtJvpeR5c1UwzgoJEh5RWyCJDJAhcKxHmfflgob9B_IPr3KmnA3bi';
+
+    const payload = {
+        embeds: [
+            {
+                title: "Consiglio in arrivo!",
+                color: 3447003,
+                fields: [
+                    {
+                        name: "Titolo",
+                        value: title,
+                        inline: true
+                    },
+                    {
+                        name: "Descrizione",
+                        value: description,
+                        inline: false
+                    }
+                ],
+                timestamp: new Date()
+            }
+        ]
+    };
+
+    fetch(webhookURL, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+    }).then(response => {
+        if (response.ok) {
+            alert('Consiglio inviato con successo!');
+            document.getElementById('consigliForm').reset();
+            document.getElementById('consigliSection').classList.add('hidden');
+        } else {
+            alert('Errore nell\'invio del consiglio.');
+        }
+    }).catch(error => {
+        console.error('Errore:', error);
+        alert('Errore nell\'invio del consiglio.');
+    });
 });
