@@ -37,7 +37,7 @@ document.getElementById('consigliForm').addEventListener('submit', function(even
     const title = document.getElementById('title').value;
     const description = document.getElementById('description').value;
 
-    const webhookURL = 'https://discord.com/api/webhooks/1267498868229144730/vLMxzUBkw_fWWVlVtJvpeR5c1UwzgoJEh5RWyCJDJAhcKxHmfflgob9B_IPr3KmnA3bi';
+    const webhookURL = 'https://discord.com/api/webhooks/1267580576953798787/coyNlM1wnFSAlkttL7vbf87QlRud_Iu4lLPWWfhORJ00exQMKBUudE2df_BfdT5Yz0Kb';
 
     const payload = {
         embeds: [
