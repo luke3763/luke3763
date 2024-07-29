@@ -15,6 +15,67 @@ a {
     color: white;
 }
 
+.hidden {
+    display: none;
+}
+
+
+/* consigli */
+#consigliSection {
+    background-color: rgb(158, 158, 158);
+    border: 5px solid rgb(124, 124, 124);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#consigliSection h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#consigliForm {
+    display: flex;
+    flex-direction: column;
+}
+#consigliForm label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+#consigliForm input[type="text"],
+#consigliForm textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+#consigliForm textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+#consigliForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#consigliForm button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+
 /* navbar */
 nav {
     background-color: #333;
