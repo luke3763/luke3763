@@ -1,6 +1,6 @@
 // copy ip
 document.getElementById('copyButton').addEventListener('click', function() {
-    const textToCopy = 'play.starmc.net';
+    const textToCopy = 'play.starmc.org';
 
     const tempInput = document.createElement('input');
     tempInput.value = textToCopy;
