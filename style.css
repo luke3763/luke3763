@@ -19,6 +19,28 @@ a {
     display: none;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #262D37;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f7e820;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7e760d;
+}
+
+::selection {
+    background: #a0944e;
+    color: white;
+}
+
 
 /* consigli */
 #consigliSection {
