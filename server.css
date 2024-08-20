@@ -1,0 +1,59 @@
+.link-item-wrapper {
+    margin-bottom: 20px; /* Spazio tra i singoli link */
+}
+
+.link-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #f0f0f0; /* Colore di sfondo del link */
+    transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #e0e0e0; /* Colore di sfondo del link al passaggio del mouse */
+}
+
+.link-icon-float {
+    margin-right: 15px; /* Spazio tra l'icona e il testo */
+}
+
+.link-name {
+    color: black;
+    font-weight: bold;
+}
+
+.link-url {
+    color: #666; /* Colore del testo dell'URL */
+    font-size: 0.9em; /* Dimensione del testo dell'URL */
+}
+
+.link-arrow-wrapper {
+    margin-left: auto; /* Spinge la freccia verso destra */
+}
+
+.music-player {
+    text-align: center;
+}
+
+.music-info {
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.progress-bar {
+    height: 5px;
+    background-color: #ccc;
+    margin-top: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #1db954;
+    width: 0;
+}
